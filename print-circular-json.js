@@ -43,6 +43,7 @@ JSON.safeStringify = (obj, indent = 2) => {
 console.log('options', JSON.safeStringify(options))
 
 // ---
+// Credit: https://stackoverflow.com/questions/10392293/stringify-convert-to-json-a-javascript-object-with-circular-reference/12659424#12659424
 
 // Option 3: Same as option 1
 JSON.stringify( that.person, function( key, value) {
